@@ -1,0 +1,28 @@
+<h1>New Product</h1>
+
+<form ng-submit="createProduct()">
+  <div class="form-group">
+    <label for="title">Name</label>
+    <input type="text" class="form-control" id="title" ng-model="product.name">
+  </div>
+   <div class="form-group">
+    <label for="image">Category</label>
+    <input type="text" class="form-control" id="image" placeholder="" ng-model="product.category">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Ingredients</label>
+    <textarea class="form-control" id="description" ng-model="product.ingredients"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="image">UPC #</label>
+    <input type="text" class="form-control" id="image" placeholder="" ng-model="product.upc">
+  </div>
+   <div class="form-group">
+    <label for="image">Image</label>
+    <input type="url" class="form-control" id="image" placeholder="" ng-model="product.image">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

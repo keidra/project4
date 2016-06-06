@@ -1,1 +1,18 @@
-style.css
+body {
+  background-color: #A2DCEA;
+}
+
+
+.img-responsive {
+  width: 25%
+}
+
+.btn-danger {
+  margin-top: -40px;
+}
+
+.product {
+  text-align: center;
+  margin-top: -50px;
+}
+
