@@ -37,13 +37,6 @@ app.config([
     templateUrl: 'app/views/dairyfree.html',
     controller: 'HomeCtrl'
   })
-
-
-  // .state('newProduct', {
-  //   url: '/products/new',
-  //   templateUrl: 'app/views/newProduct.html',
-  //   controller: 'NewCtrl'
-  // })
   .state('productShow', {
     url: '/products/:id',
     templateUrl: 'app/views/showProduct.html',

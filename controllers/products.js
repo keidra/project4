@@ -9,13 +9,6 @@ router.route('/')
       res.send(products);
     });
   })
-  // .post(function(req, res) {
-  //   Product.create(req.body, function(err, product) {
-  //     if (err) return res.status(500).send(err);
-  //     res.send(product);
-  //   });
-  // });
-
 router.route('/:id')
   .get(function(req, res) {
     Product.findById(req.params.id, function(err, product) {

@@ -26,23 +26,6 @@ angular.module('ProductCtrls', ['ProductServices'])
     console.log(data);
   });
 }])
-// .controller('NewCtrl', ['$scope', '$location', 'Product', function($scope, $location, Product) {
-//   $scope.product = {
-//     name: '',
-//     ingredients: '',
-//     image: '',
-//     upc: '', 
-//     category: ''
-//   };
-
-//   $scope.createProduct = function() {
-//     Product.save($scope.product, function success(data) {
-//       $location.path('/');
-//     }, function error(data) {
-//       console.log(data);
-//     });
-//   }
-// }])
 .controller('NavCtrl', ['$scope', 'Auth', '$state', 'Alerts', function($scope, Auth, $state, Alerts) {
   $scope.Auth = Auth;
   $scope.logout = function() {
