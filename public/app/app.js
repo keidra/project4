@@ -1,31 +1,49 @@
 var app = angular.module('ProductApp', ['ui.router', 'ProductCtrls']);
 
+
 app.config([
   '$stateProvider',
   '$urlRouterProvider',
   '$locationProvider',
-  function($stateProvider, $urlRouterProvider, $locationProvider) {
+  '$httpProvider',
+  function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 
   $urlRouterProvider.otherwise('/404');
+  $httpProvider.interceptors.push('AuthInterceptor');
 
     $stateProvider
-  .state('home', {
+    .state('home', {
     url: '/',
-    templateUrl: 'app/views/products.html',
+    templateUrl: 'app/views/beforeSignup.html',
+    controller: 'HomeCtrl'
+  })
+  .state('aftersignup', {
+    url: '/start',
+    templateUrl: 'app/views/home.html',
+    controller: 'HomeCtrl'
+  })
+  .state('paleo', {
+    url: '/paleo',
+    templateUrl: 'app/views/paleo.html',
+    controller: 'HomeCtrl'
+  })
+  .state('gluten', {
+    url: '/glutenfree',
+    templateUrl: 'app/views/glutenfree.html',
+    controller: 'HomeCtrl'
+  })
+  .state('dairy', {
+    url: '/dairyfree',
+    templateUrl: 'app/views/dairyfree.html',
     controller: 'HomeCtrl'
   })
 
-  $stateProvider
-  .state('productList', {
-    url: '/',
-    templateUrl: 'app/views/products.html',
-    controller: 'HomeCtrl'
-  })
-  .state('newProduct', {
-    url: '/products/new',
-    templateUrl: 'app/views/newProduct.html',
-    controller: 'NewCtrl'
-  })
+
+  // .state('newProduct', {
+  //   url: '/products/new',
+  //   templateUrl: 'app/views/newProduct.html',
+  //   controller: 'NewCtrl'
+  // })
   .state('productShow', {
     url: '/products/:id',
     templateUrl: 'app/views/showProduct.html',
@@ -52,4 +70,4 @@ app.config([
   });
 
   $locationProvider.html5Mode(true);
-}]);
+}])

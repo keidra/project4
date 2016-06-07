@@ -1,8 +1,23 @@
-body {
-  background-color: #A2DCEA;
+html, body, .container-table {
+  background-color: white;
+  height: 100%;
+}
+
+/* HOME PAGE */
+.row ng-scope {
+  margin: 0 auto;
+}
+
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
+/* PRODUCT LIST PAGE */
 .img-responsive {
   width: 25%
 }

@@ -17,7 +17,6 @@ angular.module('ProductCtrls', ['ProductServices'])
   }
 }])
 
- 
 .controller('ShowCtrl', ['$scope', '$stateParams', 'Product', function($scope, $stateParams, Product) {
   $scope.product = {};
 
@@ -27,23 +26,23 @@ angular.module('ProductCtrls', ['ProductServices'])
     console.log(data);
   });
 }])
-.controller('NewCtrl', ['$scope', '$location', 'Product', function($scope, $location, Product) {
-  $scope.product = {
-    name: '',
-    ingredients: '',
-    image: '',
-    upc: '', 
-    category: ''
-  };
+// .controller('NewCtrl', ['$scope', '$location', 'Product', function($scope, $location, Product) {
+//   $scope.product = {
+//     name: '',
+//     ingredients: '',
+//     image: '',
+//     upc: '', 
+//     category: ''
+//   };
 
-  $scope.createProduct = function() {
-    Product.save($scope.product, function success(data) {
-      $location.path('/');
-    }, function error(data) {
-      console.log(data);
-    });
-  }
-}])
+//   $scope.createProduct = function() {
+//     Product.save($scope.product, function success(data) {
+//       $location.path('/');
+//     }, function error(data) {
+//       console.log(data);
+//     });
+//   }
+// }])
 .controller('NavCtrl', ['$scope', 'Auth', '$state', 'Alerts', function($scope, Auth, $state, Alerts) {
   $scope.Auth = Auth;
   $scope.logout = function() {
@@ -77,7 +76,7 @@ angular.module('ProductCtrls', ['ProductServices'])
       Auth.saveToken(res.data.token);
       Alerts.add('success', 'Logged in!');
       console.log('Token:', res.data.token);
-      $location.path('/');
+      $location.path('/start');
     }, function error(res) {
       Alerts.add('danger', 'Incorrect email/password');
       console.log(res);

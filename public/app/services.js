@@ -52,10 +52,8 @@ angular.module('ProductServices', ['ngResource'])
 }])
 
 .factory('AuthInterceptor', ['Auth', function(Auth) {
-  // if querying other APIs, add URLs to this array
-  var excludedEndpoints = [
-    'https://swapi.co/api/films'
-  ];
+
+  var excludedEndpoints = [];
 
   return {
     request: function(config) {
@@ -68,4 +66,4 @@ angular.module('ProductServices', ['ngResource'])
       return config;
     }
   }
-}]);
+}])

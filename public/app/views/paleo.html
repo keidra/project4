@@ -1,6 +1,6 @@
 <h1>Diet Database</h1>
 
-<a href="/products/new" class="btn btn-success">New Product</a>
+<!-- <a href="/products/new" class="btn btn-success">New Product</a> -->
 
 <div class="form-group">
   <label for="search">Search</label>
@@ -9,8 +9,9 @@
 
 <div class="well" ng-repeat="product in products | filter:{name:search} track by product._id">
   <img class="img-responsive" ng-src="{{product.image}}">
+  <h1 class="productname"><a ng-href="/products/{{product._id}}">{{product.company}}</a></h1>
   <h1 class="product"><a ng-href="/products/{{product._id}}">{{product.name}}</a></h1>
   <!-- <a ng-href="/products/{{product._id}}">Permalink</a> -->
-  <a ng-click="updateProduct(product._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-left"></a>
+ <!--  <a ng-click="updateProduct(product._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-left"></a> -->
   <a ng-click="deleteProduct(product._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-right"></a>
 </div>

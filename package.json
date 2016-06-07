@@ -13,17 +13,7 @@
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "express-jwt": "^3.4.0",
-    "factual-api": "^1.0.7",
     "jsonwebtoken": "^5.7.0",
     "mongoose": "^4.4.19",
     "ui-router": "^1.0.0-alpha.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/keidra/project4.git"
-  },
-  "bugs": {
-    "url": "https://github.com/keidra/project4/issues"
-  },
-  "homepage": "https://github.com/keidra/project4#readme"
-}
+  }
