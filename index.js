@@ -11,7 +11,7 @@ var secret = "mysupersecretpassword";
 
 
 
-mongoose.connect('mongodb://localhost/products');
+mongoose.connect(prcoess.env.MONGOLAB_URI || 'mongodb://localhost/products');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
