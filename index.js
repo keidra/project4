@@ -9,8 +9,6 @@ var app = express();
 
 var secret = "mysupersecretpassword";
 
-
-
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/products');
 
 app.use(bodyParser.json());
