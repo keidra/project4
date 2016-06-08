@@ -6,8 +6,9 @@ var ProductSchema = new mongoose.Schema({
   ingredients: String,
   image: String, 
   upc: Number,
-  category: String,
-  price: Number
+  diet: Number,
+  price: Number, 
+  category: String
 });
 
 module.exports = mongoose.model('Products', ProductSchema);

@@ -1,5 +1,6 @@
 var express = require('express');
 var User = require('../models/user');
+var Product = require('../models/product');
 var router = express.Router();
 
 router.route('/')
@@ -16,11 +17,29 @@ router.route('/')
     });
   });
 
+router.get('/products', function(req, res) {
+  User.findById(req.user._doc._id).populate('products').exec(function(err, user) {
+    console.log(user);
+    res.json(user.products);
+  })
+});
+
 router.get('/:id', function(req, res) {
   User.findById(req.params.id, function(err, user) {
     if (err) return res.status(500).send(err);
     res.send(user);
   });
 });
+
+router.post('/product/:id', function(req, res) {
+  User.findById(req.user._doc._id, function(err, user) {
+    user.products=user.products||[];
+    user.products.push(req.params.id);
+    user.save();
+    res.send(200);
+  });
+});
+
+
 
 module.exports = router;

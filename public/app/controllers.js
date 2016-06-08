@@ -1,6 +1,18 @@
 angular.module('ProductCtrls', ['ProductServices'])
-.controller('HomeCtrl', ['$scope', 'Product', function($scope, Product) {
+.controller('HomeCtrl', ['$scope', '$location', '$http', 'Product', function($scope, $location, $http, Product) {
   $scope.products = [];
+
+   $scope.favorites = [];
+  
+  $scope.addFav = function(id) {
+    $http.post('/api/users/product/' + id);
+    $location.path('/favorites');
+  }
+
+  $http.get('/api/users/products').then(function success(res){
+    console.log(res)
+    $scope.favorites = res.data;
+  },function error(res){})
 
   Product.query(function success(data) {
     $scope.products = data;
@@ -8,13 +20,14 @@ angular.module('ProductCtrls', ['ProductServices'])
     console.log(data);
   });
 
-  $scope.deleteProduct = function(id, productsIdx) {
+   $scope.deleteProduct = function(id, productsIdx) {
     Product.delete({id: id}, function success(data) {
-      $scope.products.splice(productsIdx, 1);
+      $scope.favorites.splice(productsIdx, 1);
     }, function error(data) {
       console.log(data);
     });
   }
+
 }])
 
 .controller('ShowCtrl', ['$scope', '$stateParams', 'Product', function($scope, $stateParams, Product) {
@@ -26,6 +39,9 @@ angular.module('ProductCtrls', ['ProductServices'])
     console.log(data);
   });
 }])
+
+
+
 .controller('NavCtrl', ['$scope', 'Auth', '$state', 'Alerts', function($scope, Auth, $state, Alerts) {
   $scope.Auth = Auth;
   $scope.logout = function() {

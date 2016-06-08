@@ -5,11 +5,9 @@
   "image": "http://ecx.images-amazon.com/images/I/91kI2fSqXvL._SX522_.jpg",
   "upc": 813926002351,
   "price": 10.99,
-  "category": [
-    "Paleo",
-    "Gluten-Free",
-    "Dairy-Free"
-  ]
+  "diet": 4, 
+  "category": "Baked Goods"
+
 }
 
 {
@@ -19,11 +17,31 @@
   "image": "http://ecx.images-amazon.com/images/I/81ACuSlVttL._SX522_.jpg",
   "upc": 698997809104,
   "price": 5.99,
-  "category": [
-    "Paleo",
-    "Gluten-Free",
-    "Dairy-Free"
-  ]
+  "diet": 3, 
+  "category": "Baked Goods"
 }
+
+{
+  "company": "Cocomels",
+  "name": "Coconut Milk Caramels",
+  "ingredients": "Organic coconut milk (organic coconut, water), organic brown rice syrup, organic dried cane syrup, sea salt, xanthan gum",
+  "image": "http://ecx.images-amazon.com/images/I/91J0TXz40jL._SX522_.jpg",
+  "upc": 853610003455,
+  "price": 4.99,
+  "diet": 3, 
+  "category": "Candy"
+}
+
+{
+  "company": "Jack\n's Paleo Kitchen",
+  "name": "Lemon Zing Cookies",
+  "ingredients": "Organic Palm Shortening, Organic Honey, Organic Maple Syrup, Organic Coconut Flour, Arrowroot Powder, Sweet Potato Flour, Organic Lemon Juice, Lemon Extract (Oil of Lemon, Alcohol, Water), Baking Soda, Vanilla Extract (Vanilla Bean Extractives in Water, Alcohol), Grass Fed Gelatin",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/817YHwEJoYL._SL1500_.jpg",
+  "upc": 868524000124,
+  "price": 4.99,
+  "diet": 4, 
+  "category": "Cookies"
+}
+
 
 

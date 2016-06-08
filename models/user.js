@@ -4,7 +4,8 @@ var bcrypt   = require('bcrypt');
 var UserSchema = mongoose.Schema({
   name: String,
   email: String,
-  password: String
+  password: String,
+  products: [{type: mongoose.Schema.Types.ObjectId, ref: 'Products'}]
 });
 
 UserSchema.set('toJSON', {

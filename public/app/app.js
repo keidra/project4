@@ -45,7 +45,8 @@ app.config([
    $stateProvider
   .state('favorites', {
     url: '/favorites',
-    templateUrl: 'app/views/favorites.html', 
+    templateUrl: 'app/views/favorites.html',
+    controller: 'HomeCtrl' 
   })
   .state('signup', {
     url: '/signup',
