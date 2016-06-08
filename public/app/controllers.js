@@ -42,7 +42,7 @@ angular.module('ProductCtrls', ['ProductServices'])
   $scope.userSignup = function() {
     $http.post('/api/users', $scope.user).then(function success(res) {
       Alerts.add('success', 'Sign up successful!');
-      $location.path('/');
+      $location.path('/start');
     }, function error(res) {
       Alerts.add('danger', 'Error. See console');
       console.log(res);

@@ -3,10 +3,27 @@
   "name": "Paleo Wraps",
   "ingredients": "Coconut Meat, Coconut Water, Unrefined Virgin Coconut Oil",
   "image": "http://ecx.images-amazon.com/images/I/91kI2fSqXvL._SX522_.jpg",
-  "upc": "813926002351",
+  "upc": 813926002351,
+  "price": 10.99,
   "category": [
     "Paleo",
     "Gluten-Free",
     "Dairy-Free"
   ]
 }
+
+{
+  "company": "Udis",
+  "name": "White Sandwich Bread Loaf",
+  "ingredients": "Filtered water, tapioca starch, brown rice flour, potato starch, canola oil or sunflower oil, egg whites, tapioca maltodextrin, evaporated cane juice, tapioca syrup, yeast, xanthan gum, salt, baking powder (sodium bicarbonate, cornstarch, calcium sulfate, monocalcium phosphate), mold inhibitor (cultured corn syrup, ascorbic acid), ascorbic acid (contains cellulose and cornstarch), enzymes",
+  "image": "http://ecx.images-amazon.com/images/I/81ACuSlVttL._SX522_.jpg",
+  "upc": 698997809104,
+  "price": 5.99,
+  "category": [
+    "Paleo",
+    "Gluten-Free",
+    "Dairy-Free"
+  ]
+}
+
+
