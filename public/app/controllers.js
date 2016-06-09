@@ -5,8 +5,12 @@ angular.module('ProductCtrls', ['ProductServices'])
    $scope.favorites = [];
   
   $scope.addFav = function(id) {
-    $http.post('/api/users/product/' + id);
-    $location.path('/favorites');
+    $http.post('/api/users/product/' + id).then(function success(res){
+      $scope.favorites = res.data;
+      $location.path('/favorites');
+    }, function error(res){
+      $location.path('/favorites');
+    });
   }
 
   $http.get('/api/users/products').then(function success(res){

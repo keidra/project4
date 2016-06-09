@@ -9,8 +9,9 @@ var app = express();
 
 var secret = "mysupersecretpassword";
 
-mongoose.connect("mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PASS+"@ds025603.mlab.com:25603/products");
+// mongoose.connect("mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PASS+"@ds025603.mlab.com:025603/products");
 
+mongoose.connect("mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PASS+"@ds025603.mlab.com:25603/heroku_b5nb6khd");
 
 
 app.use(bodyParser.json());

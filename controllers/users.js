@@ -19,7 +19,7 @@ router.route('/')
 
 router.get('/products', function(req, res) {
   User.findById(req.user._doc._id).populate('products').exec(function(err, user) {
-    console.log(user);
+    console.log(err);
     res.json(user.products);
   })
 });
@@ -36,7 +36,7 @@ router.post('/product/:id', function(req, res) {
     user.products=user.products||[];
     user.products.push(req.params.id);
     user.save();
-    res.send(200);
+    res.send(user.products);
   });
 });
 
