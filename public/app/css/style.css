@@ -42,13 +42,14 @@ html, body, .container-table {
 /* SIGNUP */
 div.member_signin {
     text-align: center;
+    margin-left: -35px;
 }
 
 div.member_signin  i.fa.fa-user {
     color: #FFF;
     background-color: #9EEE72;
     border-radius: 500px;
-    font-size: 36px;
+    font-size: 1.5em;
     padding: 15px 20px 15px 20px;
 }
 
@@ -58,14 +59,15 @@ div.fa_user {
 }
 
 p.member {
-    font-size: 19px;
+    font-size: 15px;
     color: #888888;
     margin-bottom: 20px;
 }
 
 button.login {
     margin-top: 10px;
-    width: 50%;
+    width: 200px;
+    height: 100px;
     text-transform: uppercase;
 }
 
@@ -94,11 +96,15 @@ p.forgotpass a {
 
 .panel {
     margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid darkgray;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    background-color: transparent;
+    border: 1px solid transparent;
+    /*border-radius: 4px;*/
+    -webkit-box-shadow: 0 1px 1px transparent;
+    box-shadow: 0 1px 1px transparent;
+}
+
+body > div.container > div:nth-child(2) {
+  margin-top: 75px;
 }
 
 /* PRODUCT DISPLAY */
@@ -200,6 +206,14 @@ img-responsive {
 
 .signup {
   text-align: center;
+  font-size: 3em;
+  background-color: #A2DCEA;
+  color: black;
+}
+
+.hometext {
+  font-size: 3em;
+  text-align: center;
 }
 
 /* LOGIN */
@@ -216,3 +230,10 @@ label {
   font-weight: 400;
   text-align: left; 
 }
+
+/* SIGNUP */
+
+.signupicon {
+  width: 75%;
+}
+
