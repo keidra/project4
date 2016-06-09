@@ -14,7 +14,7 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       <li><a href="/start">HOME</a></li>
-      <li><a href="/favorites">FAVORITES</a></li>
+      <li><a href="/favorites" ng-show="Auth.isLoggedIn()">FAVORITES</a></li>
       <li><a href="/signup" ng-hide="Auth.isLoggedIn()">SIGNUP</a></li>
       <li><a href="/login" ng-hide="Auth.isLoggedIn()">LOGIN</a></li>
       <li><a ng-click="logout()" ng-show="Auth.isLoggedIn()">LOGOUT</a></li>
