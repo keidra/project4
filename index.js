@@ -11,10 +11,12 @@ var secret = "mysupersecretpassword";
 
 // mongoose.connect("mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PASS+"@ds025603.mlab.com:025603/products");
 
-console.log("user:", process.env.MONGO_USER);
-console.log("pass:", process.env.MONGO_PASS);
-mongoose.connect("mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PASS+"@ds025603.mlab.com:25603/heroku_b5nb6khd");
+// console.log("user:", process.env.MONGO_USER);
+// console.log("pass:", process.env.MONGO_PASS);
+// mongoose.connect("mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PASS+"@ds025603.mlab.com:25603/heroku_b5nb6khd");
 
+var mongodbURI = process.env.MONGODB_URI || 'mongodb://localhost/products';
+mongoose.connect(mongodbURI);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));

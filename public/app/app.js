@@ -1,4 +1,4 @@
-var app = angular.module('ProductApp', ['ui.router', 'ProductCtrls']);
+var app = angular.module('ProductApp', ['ui.router', 'ui.bootstrap', 'ProductCtrls']);
 
 
 app.config([
