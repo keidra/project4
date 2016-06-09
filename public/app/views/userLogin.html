@@ -1,4 +1,4 @@
-<form ng-submit="userLogin()">
+<!-- <form ng-submit="userLogin()">
   <legend class="login">Login</legend>
 
   <div class="form-group">
@@ -10,5 +10,34 @@
     <input type="password" class="form-control" id="password" placeholder="********" ng-model="user.password">
   </div>
 
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" class="btn btn-primary signup">Login</button>
 </form>
+ -->
+<div class="col-sm-6 col-md-4 col-md-offset-4">
+    <a href="#" class="thumbnail paleo signupicon">
+      <img src="app/img/login.png" alt="login icon">
+    </a>
+</div>
+<div class="container">
+  <div class="col-md-4 col-md-offset-4 col-lg-6 col-lg-offset-3">
+    <div class="panel member_signin">
+      <div class="panel-body">
+        <form role="form" class="loginform" ng-submit="userLogin()">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="sr-only">Email address</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="exampleInputEmail1"
+                placeholder="E-mail" ng-model="user.email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="sr-only">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm signup">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

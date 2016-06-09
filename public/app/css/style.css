@@ -104,7 +104,7 @@ p.forgotpass a {
 }
 
 body > div.container > div:nth-child(2) {
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 /* PRODUCT DISPLAY */
@@ -144,8 +144,12 @@ img-responsive {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: black;
-    font-size: 1.5em;
+  color: black;
+  font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav {
+  margin-left: 390px;
 }
 
 @media (min-width: 768px) {
@@ -209,6 +213,7 @@ img-responsive {
   font-size: 3em;
   background-color: #A2DCEA;
   color: black;
+  margin-left: 100px;
 }
 
 .hometext {
@@ -229,6 +234,18 @@ label {
   margin-bottom: 5px;
   font-weight: 400;
   text-align: left; 
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+     border-bottom: 1px solid transparent; 
 }
 
 /* SIGNUP */
