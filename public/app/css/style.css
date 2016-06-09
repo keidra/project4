@@ -34,13 +34,29 @@ html, body, .container-table {
   margin-top: -40px;
 }
 
-.product {
+/*.product {
   text-align: center;
   margin-top: -50px;
-}
+}*/
 .productname {
-
+ /* margin-left: 500px;*/
+  font-size: 2.5em;
+  margin-top: -95px;
+  text-align: center;
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/*.img-circle {
+  border-radius: 50%;
+}*/
 
 /* SIGNUP */
 div.member_signin {

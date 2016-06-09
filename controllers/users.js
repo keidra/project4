@@ -40,6 +40,14 @@ router.post('/product/:id', function(req, res) {
   });
 });
 
-
+router.delete('/products/:id', function(req, res) {
+  User.findById(req.user._doc._id, function(err, user) {
+    user.products=user.products||[];
+    var index = user.products.indexOf(req.params.id);
+    user.products.splice(index, 1);
+    user.save();
+    res.send(user.products);
+  })
+});
 
 module.exports = router;

@@ -25,8 +25,9 @@ angular.module('ProductCtrls', ['ProductServices'])
   });
 
    $scope.deleteProduct = function(id, productsIdx) {
-    Product.delete({id: id}, function success(data) {
-      $scope.favorites.splice(productsIdx, 1);
+    $http.delete('/api/users/products/' + id).then(function success(res){
+      console.log(res);
+      $scope.favorites = res.data;
     }, function error(data) {
       console.log(data);
     });
