@@ -36,10 +36,6 @@ html, body, .container-table {
   margin-top: -40px;
 }
 
-/*.product {
-  text-align: center;
-  margin-top: -50px;
-}*/
 .productname {
   margin-left: 105px;
   font-size: 3em;
@@ -55,10 +51,6 @@ a:hover {
   text-decoration: none;
   color: black;
 }
-
-/*.img-circle {
-  border-radius: 50%;
-}*/
 
 /* SIGNUP */
 div.member_signin {
@@ -135,6 +127,24 @@ body > div.container > div:nth-child(2) {
   margin: 0 auto;
 }
 
+.show {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-left: 60px;
+
+}
+
+.showproduct {
+  margin-top: -700px;
+
+}
+
+.back {
+  margin-top: -845px;
+  margin-left: -120px;
+}
+
 .well {
   min-height: 20px;
   padding: 19px;
@@ -175,10 +185,16 @@ body > div.container > div:nth-child(2) {
 .navbar-default .navbar-nav>li>a {
   color: black;
   font-size: 1.5em;
+  font-weight: 800;
 }
 
-.navbar-default .navbar-nav {
-  margin-left: 475px;
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 .navbar-default .navbar-toggle {
@@ -311,8 +327,27 @@ legend {
   font-size: 3.5em;
 }
 .list {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 120%;
 }
 .productdetail {
   width: 500px;
 }
+
+/*ABOUT*/
+.abouttext{
+  width: 600px;
+  text-align: center;
+  margin-left: -110px;
+}
+.about{
+  margin-left: 40px;
+  margin-bottom: -10px;
+  width: 80%;
+}
+.abouticon {
+  margin-top: -30px;
+}
+

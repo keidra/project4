@@ -10,7 +10,7 @@
 </div>
 <div class="well" ng-repeat="favorite in favorites track by $index">
   <img class="img-responsive media-left" ng-src="{{favorite.image}}"><h1 class="productname" ><a ng-href="/products/{{favorite._id}}">{{favorite.company}}<br>{{favorite.name}}</a></h1>
-  <a ng-click="deleteProduct(favorite._id)" class="btn btn-danger glyphicon glyphicon-trash pull-right"></a>
+  <a ng-href="/favorites" ng-click="deleteProduct(favorite._id); reloadRoute()" class="pull-right"><img src="app/img/trash.png" alt="delete icon" class="favbutton"></a>
 </div>
 
 

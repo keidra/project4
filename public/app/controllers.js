@@ -1,5 +1,5 @@
 angular.module('ProductCtrls', ['ProductServices'])
-.controller('HomeCtrl', ['$scope', '$location', '$http', 'Product', function($scope, $location, $http, Product) {
+.controller('HomeCtrl', ['$scope', '$location', '$http', '$window', 'Product', function($scope, $location, $http, $window, Product) {
   $scope.products = [];
 
    $scope.favorites = [];
@@ -28,10 +28,14 @@ angular.module('ProductCtrls', ['ProductServices'])
     $http.delete('/api/users/products/' + id).then(function success(res){
       $scope.favorites = res.data;
       $location.path('/favorites');
-    }, function error(data) {
+    }, function error(res) {
       $location.path('/favorites');
     });
   }
+
+  $scope.reloadRoute = function() {
+   $window.location.reload();
+}
 
 }])
 

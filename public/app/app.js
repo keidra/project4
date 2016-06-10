@@ -48,6 +48,11 @@ app.config([
     templateUrl: 'app/views/favorites.html',
     controller: 'HomeCtrl' 
   })
+  .state('about', {
+    url: '/about',
+    templateUrl: 'app/views/about.html',
+    controller: 'HomeCtrl' 
+  })
   .state('signup', {
     url: '/signup',
     templateUrl: 'app/views/userSignup.html',
