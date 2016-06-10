@@ -10,9 +10,7 @@
 </div>
 
 <div class="well" ng-repeat="product in products | filter:{name:search} track by product._id" ng-if="product.diet == 2 || 3 || 4">
-  <img class="img-responsive"  ng-src="{{product.image}}">
-  <h1 class="productname"><a ng-href="/products/{{product._id}}">{{product.company}}</a></h1>
-  <h1 class="product"><a ng-href="/products/{{product._id}}">{{product.name}}</a></h1>
-<!--   <a ng-click="updateProduct(product._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-left"></a> -->
-  <a ng-click="addFav(product._id)" class="btn btn-danger glyphicon glyphicon-heart pull-right"></a>
+  <img class="img-responsive media-left" ng-src="{{product.image}}"><h1 class="productname" ><a ng-href="/products/{{product._id}}">{{product.company}}<br>{{product.name}}</a></h1>
+  
+ <a ng-click="addFav(product._id)" class="pull-right"><img src="app/img/favicon.png" alt="fav icon" class="favbutton"></a>
 </div>

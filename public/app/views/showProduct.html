@@ -1,11 +1,24 @@
-<h1>{{product.name}}</h1>
+
 
 <div class="well">
-  
-  <img class="img-responsive" ng-src="{{product.image}}">
-  <p>
-    Ingredients: {{product.ingredients}}
-  </p>
+    <div class="row">
+    <div class="col-sm-6 col-md-7 col-md-offset-3 col-lg-8 col-lg-offset-1">
+      <div class="thumbnail productdetail">
+        <img ng-src="{{product.image}}" class="img-show">
+        <h1 class="productshow">{{product.company}} - {{product.name}}</h1>
+        <div class="caption">
+          <h3 class="list">Ingredients: {{product.ingredients}}</h3>
+          <h3 class="list">UPC: {{product.upc}}</h3> 
+          <h3 class="list">Average Price: {{product.price}}</h3> 
+          <h3 class="list">Category: {{product.category}}</h3>         
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<a href="/items" class="btn btn-primary">&larr; Back</a>
+
+
+
+
+<a ng-href="/favorites"class="btn btn-primary">&larr; Back</a>

@@ -27,7 +27,9 @@ html, body, .container-table {
 
 /* PRODUCT LIST PAGE */
 .img-responsive {
-  width: 25%
+  width: 25%;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .btn-danger {
@@ -39,9 +41,9 @@ html, body, .container-table {
   margin-top: -50px;
 }*/
 .productname {
- /* margin-left: 500px;*/
-  font-size: 2.5em;
-  margin-top: -95px;
+  margin-left: 105px;
+  font-size: 3em;
+  margin-top: -93px;
   text-align: center;
 }
 
@@ -136,6 +138,8 @@ body > div.container > div:nth-child(2) {
 .well {
   min-height: 20px;
   padding: 19px;
+  margin: 0 auto;
+  width: 75%;
   margin-bottom: 20px;
   border: 1px solid transparent ;
   background-color: rgba(241, 196, 15,0.3);
@@ -149,8 +153,10 @@ body > div.container > div:nth-child(2) {
   width: 80px;
 }
 .pull-right {
-  margin-top: -60px;
+  margin-top: -75px;
+  margin-right: 10px;
 }
+
 
 /* NAV-BAR */
 
@@ -172,7 +178,7 @@ body > div.container > div:nth-child(2) {
 }
 
 .navbar-default .navbar-nav {
-  margin-left: 390px;
+  margin-left: 475px;
 }
 
 .navbar-default .navbar-toggle {
@@ -180,7 +186,7 @@ body > div.container > div:nth-child(2) {
     border: 1px solid transparent;
 }
 
-body > div.container > div:nth-child(1) > nav > div.navbar-collapse.navbar-ex1-collapse.collapse.in {
+.navbar-collapse.navbar-ex1-collapse.collapse.in {
   border-color: transparent;
 }
 
@@ -295,3 +301,18 @@ legend {
   width: 75%;
 }
 
+/* PRODUCT DETAIL */
+ .img-show {
+  width: 30%;
+ }
+
+ .productshow {
+  text-align: center;
+  font-size: 3.5em;
+}
+.list {
+  font-size: 1.2em;
+}
+.productdetail {
+  width: 500px;
+}

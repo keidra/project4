@@ -24,12 +24,12 @@ angular.module('ProductCtrls', ['ProductServices'])
     console.log(data);
   });
 
-   $scope.deleteProduct = function(id, productsIdx) {
+   $scope.deleteProduct = function(id) {
     $http.delete('/api/users/products/' + id).then(function success(res){
-      console.log(res);
       $scope.favorites = res.data;
+      $location.path('/favorites');
     }, function error(data) {
-      console.log(data);
+      $location.path('/favorites');
     });
   }
 
@@ -47,7 +47,7 @@ angular.module('ProductCtrls', ['ProductServices'])
 
 
 
-.controller('NavCtrl', ['$scope', 'Auth', '$state', 'Alerts', function($scope, Auth, $state, Alerts) {
+.controller('NavCtrl', ['$scope', '$http', '$location', 'Auth', '$state', 'Alerts', function($scope, $location, $http, Auth, $state, Alerts) {
   $scope.Auth = Auth;
   $scope.logout = function() {
     Auth.removeToken();
