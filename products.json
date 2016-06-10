@@ -11,7 +11,7 @@
 }
 
 {
-  "company": "Udis",
+  "company": "Udi\n's",
   "name": "White Sandwich Bread Loaf",
   "ingredients": "Filtered water, tapioca starch, brown rice flour, potato starch, canola oil or sunflower oil, egg whites, tapioca maltodextrin, evaporated cane juice, tapioca syrup, yeast, xanthan gum, salt, baking powder (sodium bicarbonate, cornstarch, calcium sulfate, monocalcium phosphate), mold inhibitor (cultured corn syrup, ascorbic acid), ascorbic acid (contains cellulose and cornstarch), enzymes",
   "image": "http://ecx.images-amazon.com/images/I/81ACuSlVttL._SX522_.jpg",
@@ -43,5 +43,43 @@
   "category": "Cookies"
 }
 
-
-
+{
+  "company": "Dang",
+  "name": "Toasted Coconut Chips",
+  "ingredients": "Coconut, Cane Sugar, Salt",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/81mHvyxYTqL._SY679_.jpg",
+  "upc": 859908003015,
+  "price": 2.99,
+  "diet": 3, 
+  "category": "Snacks"
+}
+{
+  "company": "Heavenly Organics",
+  "name": "Honey Patties",
+  "ingredients": "Raw organic white honey, unsweetened 100% organic dark chocolate, peppermint oil",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/91pT-uSXQcL._SX522SX522_SY179_CR,0,0,522,179_PIbundle-16,TopRight,0,0_SX522_SY179_CR,0,0,522,179_SH20_.jpg",
+  "upc": 897988000319,
+  "price": 1.59,
+  "diet": 4, 
+  "category": "Candy"
+}
+{
+  "company": "General Mills",
+  "name": "Rice Chex",
+  "ingredients": "Whole Grain Rice, Rice, Sugar, Salt, Molasses, Vitamin E, mixed tocopherols,BHT, Vitamin C, A B Vitamin, Vitamin B6, Vitamin B2, Vitamin A, A B Vitamin, Vitamin B12, Vitamin D3",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/811gZS8MnhL._SX522_.jpg",
+  "upc": 016000444980, 
+  "price": 3.99,
+  "diet": 3, 
+  "category": "Cereal"
+}
+{
+  "company": "Harmless Harvest",
+  "name": "Raw Coconut Water",
+  "ingredients": "Organic 100% Raw Coconut Water",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/41RFNJUMR2L.jpg",
+  "upc": 859078002061,
+  "price": 4.99,
+  "diet": 4, 
+  "category": "Beverages"
+}

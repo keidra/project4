@@ -8,7 +8,8 @@ var ProductSchema = new mongoose.Schema({
   upc: Number,
   diet: Number,
   price: Number, 
-  category: String
+  category: String, 
+  buy: String
 });
 
 module.exports = mongoose.model('Products', ProductSchema);
