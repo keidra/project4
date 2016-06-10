@@ -1,6 +1,6 @@
 General Assembly - PROJECT #4 - WHAT CAN I EAT? - FINAL PROJECT
 
-![Alt text](screen1.jpg?raw=true "Screen 1")
+![Alt text](Screen1.jpg?raw=true "Screen 1")
 
 WHAT CAN I EAT? is a database of food products categorized based on Paleo, Gluten-Free, and Dairy-Free diets. It's purpose is to assist consumers in locating products suitable for their dietary wants and needs.
 
