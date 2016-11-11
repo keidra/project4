@@ -368,6 +368,12 @@ body > div.container > div:nth-child(2) {
   margin-bottom: 10px;
 }
 
+.favorite-text {
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Alegreya Sans';
+}
+
 /* HOME */
 
 .signup {
@@ -456,5 +462,9 @@ legend {
 }
 .abouticon {
   margin-top: -30px;
+}
+
+.fav-contain {
+  margin-top: 200px;
 }
 
