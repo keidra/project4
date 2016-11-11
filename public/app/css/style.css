@@ -37,12 +37,12 @@ html, body, .container-table {
   font-size: 4em;
   font-weight: 100;
   text-align: center;
-  color: #000;
+  color: #FFF;
   margin-top: 80px;
 }
 
 .text:hover {
-  color: #fff;
+  color: #000;
 }
 
 /* AFTER SIGNUP PAGE */
@@ -69,6 +69,18 @@ html, body, .container-table {
 
 .paleoimage {
   background-image: url("/app/img/paleo.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.veganimage {
+  background-image: url("/app/img/vegan.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.glutenimage {
+  background-image: url("/app/img/gluten.jpeg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
