@@ -440,7 +440,15 @@ legend {
   width: 600px;
   text-align: center;
   margin-left: -110px;
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  line-height: 5rem;
 }
+
+.about-text {
+  margin-top: 200px;
+}
+
 .about{
   margin-left: 40px;
   margin-bottom: -10px;
