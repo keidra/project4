@@ -45,6 +45,25 @@ html, body, .container-table {
   color: #000;
 }
 
+.home {
+  border-right: 1px solid #ccc;
+  margin-left: -21px;
+  padding-right: 50px !important;
+}
+
+.fav {
+  margin-left: 25px;
+}
+
+.abt {
+  border-right: 1px solid #ccc;
+  margin-right: 26px;
+}
+
+.logout {
+  padding-right: 0px !important;
+}
+
 /* AFTER SIGNUP PAGE */
 .row ng-scope {
   margin: 0 auto;
