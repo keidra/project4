@@ -19,7 +19,7 @@ html, body, .container-table {
 }
 
 .categories {
-  border: 1px solid #969696;
+  border: 1px solid #ccc;
   height: 250px;
   margin-right: 15px;
 }
@@ -37,8 +37,12 @@ html, body, .container-table {
   font-size: 4em;
   font-weight: 100;
   text-align: center;
-  color: #969696;
+  color: #000;
   margin-top: 80px;
+}
+
+.text:hover {
+  color: #fff;
 }
 
 /* AFTER SIGNUP PAGE */
@@ -61,6 +65,12 @@ html, body, .container-table {
   margin-bottom: 10px;
   margin-top: 180px;
   font-family: 'Alegreya Sans';
+}
+
+.paleoimage {
+  background-image: url("/app/img/paleo.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .header2{
