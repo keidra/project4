@@ -19,7 +19,7 @@
      <ul class="nav navbar-nav navbar-right">
       <li><a href="/signup" ng-hide="Auth.isLoggedIn()">SIGNUP</a></li>
       <li><a href="/login" ng-hide="Auth.isLoggedIn()">LOGIN</a></li>
-      <li><a href="/about" class="abt">ABOUT</a></li>
+      <li><a href="/about" class="abt" ng-show="Auth.isLoggedIn()">ABOUT</a></li>
       <li><a href="/" ng-click="logout()" ng-show="Auth.isLoggedIn()" class="logout">LOGOUT</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->

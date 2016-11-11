@@ -209,6 +209,14 @@ body > div.container > div:nth-child(2) {
   margin-top: 60px;
 }
 
+.before {
+  margin-top: 200px;
+}
+
+.before-login {
+  margin-top: -50px;
+}
+
 /* PRODUCT DISPLAY */
 .form-group {
   text-align: left;
