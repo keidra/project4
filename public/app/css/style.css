@@ -35,7 +35,7 @@ html, body, .container-table {
 .text {
   font-family: 'Alegreya Sans';
   font-size: 4em;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   color: #FFF;
   margin-top: 80px;
@@ -393,10 +393,17 @@ body > div.container > div:nth-child(2) {
 
 .signup {
   text-align: center;
-  font-size: 3em;
-  background-color: #A2DCEA;
+  font-size: 2em;
+  background-color: rgba(158, 158, 158, 0.13);
   color: black;
-  margin-left: 100px;
+  margin-left: 125px;
+  border-radius: 0;
+}
+
+.signup:hover {
+  color: black;
+  background-color: transparent;
+  border: none;
 }
 
 .hometext {
@@ -409,6 +416,10 @@ body > div.container > div:nth-child(2) {
 .login {
   text-align: center;
   font-size: 5em;
+}
+
+.login-text {
+  margin-left: -25px;
 }
 
 label {
