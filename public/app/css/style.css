@@ -248,12 +248,14 @@ body > div.container > div:nth-child(2) {
   margin: 0 auto;
   width: 75%;
   margin-bottom: 20px;
-  border: 1px solid transparent ;
-  background-color: rgba(241, 196, 15,0.3);
-  /*border-top: 1px solid black !important;*/
+  /*border: 1px solid transparent ;
+  background-color: rgba(241, 196, 15,0.3);*/
+  border-top: 1px solid black !important;
   border-radius: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.1); 
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.1); 
+/*  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.1); 
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.1); */
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 
 .favbutton {
