@@ -228,8 +228,8 @@ body > div.container > div:nth-child(2) {
   display: inline-block;
   float: none;
   text-align: left;
-  margin-left: 60px;
-
+  margin-left: 125px;
+  margin-top: 130px;
 }
 
 .showproduct {
